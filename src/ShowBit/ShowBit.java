@@ -12,7 +12,7 @@ public class ShowBit {
 
     void show(long val) {
         long mask = 1;
-        mask <<= -1;
+        mask <<= number-1;
         int spacer = 0;
         for (; mask != 0; mask >>>= 1) {
             if ((val & mask) != 0) System.out.print("1");
